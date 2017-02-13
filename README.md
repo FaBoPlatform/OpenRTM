@@ -1,7 +1,5 @@
 # OpenRTM
 
-![](/img/title_jetson.png)
-
 # 本ドキュメントについて
 
 OpenRTMのプログラム学習用のドキュメントになっています。
