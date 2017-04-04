@@ -46,6 +46,15 @@ omniNames: (0) 2017-04-04 20:17:48.388306: Checkpointing completed.
 omniNames properly started
 ```
 
+Eclipseの<RT System Editor>パースペクティブを表示し、localhostを追加する。
+
+![](/img/dev101.png)
+
+![](/img/dev102.png)
+
+![](/img/dev103.png)
+
+
 ## OpenRTM-aist-Pythonのインストール
 
 Python版のOpenRTM-aistをインストールする。
@@ -77,6 +86,16 @@ $ PYTHON_CONFIGURE_OPTS="--enable-unicode=ucs2" pyenv install 2.7.10
 $ cd /Users/ユーザ名/.pyenv/versions/2.7.10/share/openrtm-1.1/example/python/SeqIO
 $ python SeqIn.py
 ```
+
+Eclipseの<RT System Editor>パースペクティブを表示し、localhostに起動したRTCが追加された事を確認する。
+
+![](/img/dev104.png)
+
+システムダイアグラムを表示し、RTCを貼り付ける。
+
+![](/img/dev105.png)
+
+![](/img/dev106.png)
 
 
 ## 参考
