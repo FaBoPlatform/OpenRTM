@@ -3,7 +3,7 @@
 ## 必要な条件
 
 * 2.x系のPython
-* usc2でBuildしたPython(一般のインストールパッケージはusc4でBuildされている)
+* USC-2でBuildしたPython(一般のインストールパッケージはUSC-4でBuildされている)
 
 ## OpenRTM-aistのインストール
 
@@ -59,9 +59,9 @@ Eclipseの<RT System Editor>パースペクティブを表示し、localhostを�
 
 Python版のOpenRTM-aistをインストールする。
 
-2.7系のPythonが必須である。usc4でBuildされたPythonではエラーがでる。その場合は、usc2でBuildし直す。
+2.7系のPythonが必須である。usc4でBuildされたPythonではエラーがでる。その場合は、USC-2でBuildし直す。
 
-usc2でBuildしたPythonの例
+USC-2でBuildしたPythonの例
 
 ```
 $ PYTHON_CONFIGURE_OPTS="--enable-unicode=ucs2" pyenv install 2.7.10
@@ -70,7 +70,7 @@ $ PYTHON_CONFIGURE_OPTS="--enable-unicode=ucs2" pyenv install 2.7.10
 ```shell
 $ wget http://openrtm.org/pub/OpenRTM-aist/python/1.1.2/OpenRTM-aist-Python-1.1.2.tar.gz
 $ tar xvfz OpenRTM-aist-Python-1.1.2.tar.gz
-$ cd OpenRTM-aist-Python-1.1.
+$ cd OpenRTM-aist-Python-1.1.2
 $ pyenv shell --unset
 $ pyenv local 2.7.10
 $ python setup.py build_core
