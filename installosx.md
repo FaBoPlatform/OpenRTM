@@ -82,6 +82,12 @@ $ PYTHON_CONFIGURE_OPTS="--enable-unicode=ucs2" pyenv install 2.7.10
 
 あたりに、サンプルも生成されるので、サンプルを実行してみる。
 
+パスを通す
+```shell
+$ export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages/:/Users/ユーザ名/.pyenv/versions/2.7.10/lib/python2.7/site-packages/
+```
+
+
 ```shell
 $ cd /Users/ユーザ名/.pyenv/versions/2.7.10/share/openrtm-1.1/example/python/SeqIO
 $ python SeqIn.py
