@@ -2,13 +2,23 @@
 
 簡単なRTCを作成する。
 
-## 定義
+## Config定義
+
+`/home/pi/OpenRTM/rtc.conf`
+
+```
+corba.nameservers: localhost
+naming.formats: %n.rtc
+logger.enable: NO
+```
 
 ```shell
 !export RTC_MANAGER_CONFIG="/home/pi/OpenRTM/rtc.conf"
 ```
 
 ## Import
+
+`/home/pi/OpenRTM/hellortc.ipynb`
 
 ```python
 #!/usr/bin/env python
