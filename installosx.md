@@ -75,6 +75,50 @@ usc2でBuildしたPythonの例
 $ PYTHON_CONFIGURE_OPTS="--enable-unicode=ucs2" pyenv install 2.7.10
 ```
 
+## 生成ファイルの確認
+
+OpenRTM
+```
+$ ls /Users/ユーザ名/.pyenv/versions/2.7.10/lib/python2.7/site-packages/
+OpenRTM-aist.pth
+OpenRTM_aist
+OpenRTM_aist_Python-1.1.2-py2.7.egg-info
+```
+
+Omniorb
+```
+$ ls /usr/local/lib/python2.7/site-packages | grep omni
+_omniConnMgmtmodule.so
+_omniConnMgmtmodule.so.4
+_omniConnMgmtmodule.so.4.2
+_omniZIOPmodule.so
+_omniZIOPmodule.so.4
+_omniZIOPmodule.so.4.2
+_omnicodesetsmodule.so
+_omnicodesetsmodule.so.4
+_omnicodesetsmodule.so.4.2
+_omniidlmodule.so
+_omniidlmodule.so.4
+_omniidlmodule.so.4.2
+_omnipymodule.so
+_omnipymodule.so.4
+_omnipymodule.so.4.2
+omniORB
+omniORB.pth
+omniidl
+omniidl_be
+```
+
+example
+```
+ls /Users/ユーザ名/.pyenv/versions/2.7.10/share/openrtm-1.1/example/python
+AutoControl		SeqIO			TkLRFViewer
+AutoTest		SimpleIO		__init__.py
+Composite		SimpleService		component.conf
+ConfigSample		Slider_and_Motor	rtcd.conf
+ExtTrigger		Templates
+MobileRobotCanvas	TkJoyStick
+```
 
 ## サンプルコードを実行する
 
