@@ -3,8 +3,8 @@
 ## 必要な条件
 
 * 2.x系のPython
-* usc2でBuildしたPython(一般のインストールパッケージはusc4でBuildされている)
- 
+* USC-2でBuildしたPython(一般のインストールパッケージはUSC-4でBuildされている)
+
 ## OpenRTM-aistのインストール
 
 http://sugarsweetrobotics.com/?page_id=111のページより、
@@ -32,7 +32,7 @@ dmgをクリックし、OpenRTM-aist-C++-1.1.2-Release-OSX10.9.pkg をインス�
 rtm-naming コマンドで、namingサーバを起動する。
 
 ```shell
-$ rtm-naming 
+$ rtm-naming
 
 Starting omniORB omniNames: Dev-2.local:2809
 omniNames: (0) 2017-04-04 20:17:48.386611: Data file: /Users/sasakiakira/omninames-Dev-2.local.dat.
@@ -59,20 +59,24 @@ Eclipseの<RT System Editor>パースペクティブを表示し、localhostを�
 
 Python版のOpenRTM-aistをインストールする。
 
-```shell
-$ wget http://openrtm.org/pub/OpenRTM-aist/python/1.1.2/OpenRTM-aist-Python-1.1.2.tar.gz
-$ tar xvfz OpenRTM-aist-Python-1.1.2.tar.gz 
-$ cd OpenRTM-aist-Python-1.1.2
-$ pyhton setup.py build
-$ python setup.py install
-```
+2.7系のPythonが必須である。usc4でBuildされたPythonではエラーがでる。その場合は、USC-2でBuildし直す。
 
-2.7系のPythonが必須である。usc4でBuildされたPythonではエラーがでる。その場合は、usc2でBuildし直す。
-
-usc2でBuildしたPythonの例
+USC-2でBuildしたPythonの例
 
 ```
 $ PYTHON_CONFIGURE_OPTS="--enable-unicode=ucs2" pyenv install 2.7.10
+```
+
+```shell
+$ wget http://openrtm.org/pub/OpenRTM-aist/python/1.1.2/OpenRTM-aist-Python-1.1.2.tar.gz
+$ tar xvfz OpenRTM-aist-Python-1.1.2.tar.gz
+$ cd OpenRTM-aist-Python-1.1.2
+$ pyenv shell --unset
+$ pyenv local 2.7.10
+$ python setup.py build_core
+$ python setup.py install_core
+$ python setup.py build_example
+$ python setup.py build_example
 ```
 
 ## 生成ファイルの確認
@@ -152,5 +156,3 @@ Eclipseの<RT System Editor>パースペクティブを表示し、localhostに�
 
 * [MacOSX + OpenRTM-aist](http://ysuga.net/?p=206)
 * [OpenRTM-aistをMac OS X Mavericksにインストールする](http://qiita.com/switchback_sus4/items/25a969fcc30da2cdff3b)
-
-
