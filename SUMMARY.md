@@ -10,5 +10,6 @@
 	* [HelloRTC](rtc.md)
 * FaBo
 	* [101 LED](/fabo/101_led.md)
+	* [103 Button](/fabo/103_led.md)
 * トラブルシューティング
 	* [トラブルシューティング](trouble.md)
