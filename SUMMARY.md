@@ -8,5 +8,9 @@
     * [OSXにOpenRTMを構築する](installosx.md)
 * RTC
 	* [HelloRTC](rtc.md)
+	* [PS4 Controller](ps4.md)
+* FaBo
+	* [101 LED](/fabo/101_led.md)
+	* [103 Button](/fabo/103_button.md)
 * トラブルシューティング
 	* [トラブルシューティング](trouble.md)
