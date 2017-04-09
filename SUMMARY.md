@@ -8,5 +8,7 @@
     * [OSXにOpenRTMを構築する](installosx.md)
 * RTC
 	* [HelloRTC](rtc.md)
+* FaBo
+	* [101 LED](/fabo/101_led.md)
 * トラブルシューティング
 	* [トラブルシューティング](trouble.md)
