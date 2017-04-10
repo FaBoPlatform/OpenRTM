@@ -9,15 +9,19 @@
 ```
 
 ```shell
-$ apt-get update
+$ sudo apt-get update
+```
+## OmniORBのインストール
+
+```
+$ sudo apt-get install omniidl-python
 ```
 
-## 必要なパッケージのインストール
+## OpenRTMのインストール
 
 ```
-$ apt-get -y --force-yes install gcc g++ make uuid-dev
-$ apt-get -y --force-yes install openrtm-aist openrtm-aist-dev openrtm-aist-example
-$ apt-get -y --force-yes install openrtm-aist-python openrtm-aist-python-example
+$ sudo apt-get install openrtm-aist openrtm-aist-dev openrtm-aist-example
+$ sudo apt-get install openrtm-aist-python openrtm-aist-python-example
 ```
 
 ## 動作確認
