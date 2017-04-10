@@ -17,6 +17,7 @@
 * FaBo
 	* [101 LED](/fabo/101_led.md)
 	* [103 Button](/fabo/103_button.md)
+	* [104 Angle](/fabo/104_angle.md)
 * その他
 	* [便利なリンク集](link.md)
 * トラブルシューティング
