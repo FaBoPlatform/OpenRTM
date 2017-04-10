@@ -8,6 +8,8 @@
 * 開発環境(OSX)
 	* [Eclipseで開発環境を構築](devosx.md)
     * [OSXにOpenRTMを構築する](installosx.md)
+* Jupyter
+	* [OpenRTMで使う可能性のあるコマンド](command.md)
 * RTC
 	* [HelloRTC](rtc.md)
 	* [PS4 Controller](ps4.md)
@@ -15,5 +17,7 @@
 * FaBo
 	* [101 LED](/fabo/101_led.md)
 	* [103 Button](/fabo/103_button.md)
+* その他
+	* [便利なリンク集](link.md)
 * トラブルシューティング
 	* [トラブルシューティング](trouble.md)
