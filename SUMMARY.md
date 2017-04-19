@@ -5,6 +5,8 @@
 * 開発環境(RaspPI)
     * [OpenRTMのインストール](install.md)
     * [Jupyterでの実行](jupyter.md)
+* ログインとテスト
+	* [ログインし動作テスト](login.md)
 * Jupyter(RaspPI)
 	* [OpenRTMで使う可能性のあるコマンド](command.md)
 * TensprFlow(RaspPI)
