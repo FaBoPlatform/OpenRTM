@@ -20,6 +20,8 @@ Browserを起動し、Jupyterで接続する。
 
 * http://172.31.0.1:8888/
 
+Tokenは、'fabo'。
+
 ## MotorShield Libのインストル　
 
 ```shell
