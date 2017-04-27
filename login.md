@@ -22,11 +22,7 @@ Browserを起動し、Jupyterで接続する。
 
 Tokenは、'fabo'。
 
-## MotorShield Libのインストル　
 
-```shell
-$ sudo pip install git+https://github.com/FaBoPlatform/MotorShield
-```
 
 ## Test Code
 
