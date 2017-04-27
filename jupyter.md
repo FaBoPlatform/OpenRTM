@@ -5,7 +5,7 @@ JupyterでOpenRTMを使用できるようにするために何箇所か修正が
 ## Configファイルが上書きされる修正
 
 JupyterとOpenRTMのConfigファイルの場所を保存している変数の名前がかぶっている。
-self._configFileという名の変数が、JupyterのConfigファイルの場所で上書きされているので、臨時措置として、330-335行目をコメントアウトし、JupyterのConfigファイルで上書きされたself._configFileを参照しにいかにようにする。
+self._configFileという名の変数が、JupyterのConfigファイルの場所で上書きされているので、臨時措置として、328-332行目をコメントアウトし、JupyterのConfigファイルで上書きされたself._configFileを参照しにいかないようにする。
 
 `/usr/lib/python2.7/dist-packages/OpenRTM_aist/ManagerConfig.py`
 
@@ -52,7 +52,7 @@ Jupyter上では、環境変数 "RTC_MANAGER_CONFIG"を用いてConfigファイ�
 
 ## 改行コードの修正
 
-改行コードがWindows向け(\n\r)になっているので、764行目を\nのみに修正する。
+改行コードがWindows向け(\n\r)になっているので、766行目を\nのみに修正する。
 
 `/usr/lib/python2.7/dist-packages/OpenRTM_aist/Properties.py`
 

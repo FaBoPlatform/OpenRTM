@@ -29,6 +29,6 @@ $ sudo apt-get install openrtm-aist-python openrtm-aist-python-example
 Jupyerを起動して、下記コマンドで、omniorbが起動している事を確認する。
 
 ```
-!ps ax | grep omni 
+!ps -aux | grep omni 
 ```
 
