@@ -6,7 +6,7 @@
 
 
 ```shell
-$ cd /home/pi/Document
-$ git clone https://github.com/FaBoPlatform/MotorShieldExample
+$ cd /home/pi/Documents
+$ git clone https://github.com/FaBoPlatform/MotorShieldExamples
 ```
 
