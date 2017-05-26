@@ -11,8 +11,6 @@ self._configFileという名の変数が、JupyterのConfigファイルの場所
 
 ```python
 def findConfigFile(self):
-    print "findConfigFile"
-    print self._configFile
     #if self._configFile != "":
     #  if not self.fileExist(self._configFile):
     #    print OpenRTM_aist.Logger.print_exception()

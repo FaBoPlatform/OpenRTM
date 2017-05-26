@@ -19,7 +19,7 @@
 * RTC(OSX)
 	* [HelloRTC](rtc.md)
 	* [PS4 Controller](ps4.md)
-	* [Racing Controller](rece.md)
+	* [Racing Controller](racing.md)
 * RTC(RaspPI)
 	* [Lidar Lite V3](lidar.md)
 	* [Robot Controller](robotcontroller.md)
