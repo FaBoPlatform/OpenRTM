@@ -64,7 +64,18 @@ Python版のOpenRTM-aistをインストールする。
 USC-2でBuildしたPythonの例
 
 ```
-$ PYTHON_CONFIGURE_OPTS="--enable-unicode=ucs2" pyenv install 2.7.10
+$ PYTHON_CONFIGURE_OPTS="--enable-unicode=ucs2" CFLAGS="-I$(xcrun --show-sdk-path)/usr/include" pyenv install 2.7.10
+```
+
+~/.bash_profile
+```
+export PYENV_ROOT=$HOME/.pyenv
+export PATH=$PYENV_ROOT/bin:$PATH
+eval "($pyenv init-)"
+```
+
+```shell
+$ source ~/.bash_profile
 ```
 
 ```shell
@@ -75,8 +86,12 @@ $ pyenv shell --unset
 $ pyenv local 2.7.10
 $ python setup.py build_core
 $ python setup.py install_core
+```
+doxygen関連ファイルでエラー(en,jpを適当にコピー)
+
+```shell
 $ python setup.py build_example
-$ python setup.py build_example
+$ python setup.py install_example
 ```
 
 ## 生成ファイルの確認

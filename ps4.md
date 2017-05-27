@@ -19,6 +19,7 @@ Mac上では、下記のUSBデバイスとして認識される。
 2.7系のPythonでPygameをInstallする。CFLAGSの環境変数も定義して実行。
 
 ```shell
+$ brew install sdl sdl_image sdl_mixer sdl_ttf portmidi
 $ CFLAGS='-I/usr/local/include/SDL' pip install pygame
 ```
 
