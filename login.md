@@ -4,7 +4,7 @@ RaspberryPIへのログインは、RaspberryPIをHost Access Pointにしてロ�
 事前に、下記コマンドを実行し、Host Access Pointのモードになっている事を前提に説明する。
 
 ```shell
-$ sudo /opt/fabo/bin/wifi-switch --mode ap
+$ sudo /opt/fabo/bin/wifi_switch --mode ap
 ```
 
 ## アクセスポイント
