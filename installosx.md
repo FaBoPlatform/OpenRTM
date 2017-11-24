@@ -54,6 +54,35 @@ Eclipseの<RT System Editor>パースペクティブを表示し、localhostを�
 
 ![](/img/dev103.png)
 
+---
+## ポート番号2809番がオープンできない時には
+
+以前OpenRTMを入れていたり，入れているソフトの相性で， `rtm-naming`が正常に起動できない時がある．その時のエラーとして
+
+```
+Starting omniORB omniNames: Your-name-MacBook-Pro.local:2809
+omniNames: (0) 2017-11-10 12:19:07.080677: Error: data file '/Users/Your-name/omninames-Your-name-MacBook-Pro.local.dat' exists.  Can't use -start option.
+omniNames was not properly started.
+netstat: option requires an argument -- p
+Usage:	netstat [-AaLlnW] [-f address_family | -p protocol]
+	netstat [-gilns] [-f address_family]
+	netstat -i | -I interface [-w wait] [-abdgRtS]
+	netstat -s [-s] [-f address_family | -p protocol] [-w wait]
+	netstat -i | -I interface -s [-f address_family | -p protocol]
+	netstat -m [-m]
+	netstat -r [-Aaln] [-f address_family]
+	netstat -rs [-s]
+
+cat: /var/run/omniNames.pid: No such file or directory
+No running omniNames found. The process using the port 2809
+cannot be estimated. Arboting
+```
+
+このような時は，`/Users/Your-name/omninames-Your-name-MacBook-Pro.local.dat`が悪さをしていて．うまくネーミングサーバーが起動していない．調べてみるとこのファイルのせいでサーバのパーミッションを開くことができない．そのため，
+```
+rm /Users/Your-name/omninames-Your-name-MacBook-Pro.local.dat
+```
+などを叩いて，ファイルを消すということが必要になる．
 
 ## OpenRTM-aist-Pythonのインストール
 
